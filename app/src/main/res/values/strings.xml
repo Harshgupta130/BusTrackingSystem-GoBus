@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Go Bus</string>
+    <string name="Btn_Driver_registration">Register As Driver</string>
+    <string name="Btn_User_registration">Register As User</string>
+    <string name="Text_already_have_acc">Already have account? click here</string>
+    <string name="Btn_Register">Register</string>
+    <string name="Btn_Login">Log In</string>
+    <string name="Text_dont_have_acc">Go for register</string>
+    <string name="bus_name">Bus Name</string>
+</resources>

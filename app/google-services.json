@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "136606165364",
+    "project_id": "bustrackingsystem-9700e",
+    "storage_bucket": "bustrackingsystem-9700e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136606165364:android:f0bbd6f0eabc208da3e421",
+        "android_client_info": {
+          "package_name": "com.example.bustrackingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136606165364-g0onf87h679v2d8aa58o2pirog9t9p68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY8eDhFFtxGqQQgZwCQ3NHBNwlYCCw-p0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136606165364-g0onf87h679v2d8aa58o2pirog9t9p68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Arrival"-->
+<!--        android:layout_marginLeft="20dp"/>-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/framelayout"
+        android:layout_marginLeft="90dp"
+        >
+        <View
+            android:id="@+id/line"
+            android:layout_width="4dp"
+            android:layout_height="150dp"
+            android:background="#1FD127"
+            android:layout_marginLeft="30dp"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="22.5dp"
+            android:src="#21DC28"
+
+            android:id="@+id/box"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bus_icon"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            ></ImageView>
+
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Text_stationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Stop Name"
+        android:textColor="@color/black"
+        android:fontFamily="@font/artifika"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"/>
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Departure"-->
+<!--        android:layout_marginLeft="100dp"/>-->
+
+</LinearLayout>

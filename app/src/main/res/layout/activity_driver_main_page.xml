@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    tools:context=".DriverMainPage">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="20dp">
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/busImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/driver_avatar"
+        android:layout_gravity="center_horizontal"
+
+        /></androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_ViewStart"
+        android:layout_marginHorizontal="20dp"
+        android:visibility="visible"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:boxBackgroundMode="outline"
+        android:background="#00000000"
+        android:hint="Bus No.">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Edit_busName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_startRide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="Start Ride"
+            android:textColor="@color/black"
+            android:backgroundTint="#97F306"
+            android:fontFamily="@font/artifika"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            app:cornerRadius="20dp"
+            android:layout_marginHorizontal="20dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_ViewAfterStart"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="40dp"
+    android:visibility="gone"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Text_startride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/artifika"
+        android:layout_marginTop="-50dp"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="Ride is going on."
+         />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Text_currentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/artifika"
+        android:hint="Current Location"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Btn_stopRide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="30dp"
+        android:text="STOP RIDE"
+        android:textColor="@color/black"
+        android:backgroundTint="#97F306"
+        android:fontFamily="@font/artifika"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        android:layout_marginHorizontal="20dp"/>
+
+</androidx.cardview.widget.CardView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Btn_signOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Sign Out"
+        android:textColor="@color/black"
+        android:backgroundTint="#97F306"
+        android:fontFamily="@font/artifika"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        android:layout_marginHorizontal="20dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EntryPage"
+    android:background="@drawable/bg_gradient">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="20dp">
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/busImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/location_pin"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign-Up"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#00000000"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:fontFamily="@font/berkshire_swash"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_Driver_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#97F306"
+            android:fontFamily="@font/artifika"
+            android:text="@string/Btn_Driver_registration"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Btn_User_Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#97F306"
+        android:fontFamily="@font/artifika"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/Btn_User_registration"
+        android:layout_marginTop="110dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/Already_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170dp"
+            android:clickable="true"
+            android:fontFamily="@font/aclonica"
+            android:contextClickable="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/Text_already_have_acc"
+            android:textColor="@color/black"
+            android:textSize="15sp" /></androidx.cardview.widget.CardView>
+
+</LinearLayout>

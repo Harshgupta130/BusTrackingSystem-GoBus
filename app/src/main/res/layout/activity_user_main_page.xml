@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    tools:context=".UserMainPage">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/Edit_starPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:hint="Start Point"
+                    android:textColor="@color/black"
+                    android:textColorHint="#9E504D4D"
+                    android:textSize="25sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/Edit_destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="100dp"
+                    android:hint="Destination"
+                    android:textColor="@color/black"
+                    android:textColorHint="#9E504D4D"
+                    android:textSize="25sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/Btn_Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="25dp"
+                    android:backgroundTint="#97F306"
+                    android:fontFamily="@font/artifika"
+                    android:text="Search"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:cornerRadius="20dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:hint="Destination ">-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/Edit_destination"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content" />-->
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="418dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginHorizontal="15dp"
+                tools:listitem="@layout/bus_list" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Btn_signOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="#97F306"
+                android:fontFamily="@font/artifika"
+                android:text="Sign Out"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
